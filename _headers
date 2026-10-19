@@ -1,0 +1,8 @@
+/img/*
+  Cache-Control: public, max-age=86400
+/music/*
+  Cache-Control: public, max-age=604800
+/index.html
+  Cache-Control: no-cache
+/
+  Cache-Control: no-cache

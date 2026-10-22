@@ -113,6 +113,8 @@
   .title-logo h1 { margin: 0; font-size: clamp(42px, 12vw, 84px); font-weight: 900; letter-spacing: .06em; line-height: 1.1; color: #f4f4f4; white-space: nowrap;
     text-shadow: 0 0 22px rgba(140,180,255,.35), 0 2px 0 #000, 0 6px 22px rgba(0,0,0,.85); }
   .title-logo::after { content: ''; display: block; height: 2px; width: 78%; margin: 12px auto 0; background: linear-gradient(90deg, transparent, rgba(170,200,255,.85), transparent); }
+  .title-note.title-fiction { margin-top: 2px; font-size: 12px; opacity: .8; }
+  .fiction-note { font-size: 12px; line-height: 1.5; margin: 10px 0 0; }
   .title-ver { display: block; margin-top: 8px; font-size: 14px; color: #9a9a9a; letter-spacing: .1em; }
   .title-menu { display: flex; flex-direction: column; gap: 10px; width: min(260px, 78vw); margin-top: clamp(28px, 7vh, 60px); }
   .title-menu button { border-radius: 24px; letter-spacing: .12em; background: rgba(18,18,22,.78); border-color: rgba(200,205,220,.45); }
@@ -388,6 +390,8 @@
     </div>
     <div id="titleMsg" class="msg"></div>
     <p class="muted title-note">자동 저장 · 한 번 끝난 인생은 되돌릴 수 없습니다.</p>
+    <!-- 2026-10-22 권님 요청: 허구 안내 [임시 초안] -->
+    <p class="muted title-note title-fiction">이 게임의 인물·회사·사건은 모두 지어낸 이야기입니다.</p>
     <div id="titleDex" class="box hidden"></div>
   </div>
   <div class="title-foot">
@@ -410,6 +414,8 @@
     <label class="field">주인공 이름<input id="nameInput" type="text" maxlength="10" value="한지훈" placeholder="주인공 이름 입력"></label>
     <label class="field">여동생 이름<input id="sisNameInput" type="text" maxlength="10" value="예린" placeholder="여동생 이름 입력"></label>
     <div id="nameMsg" class="msg warn"></div>
+    <!-- 2026-10-22 권님 요청: 허구 안내 [임시 초안] -->
+    <p class="muted fiction-note">이 게임에 나오는 인물, 회사, 장소, 사건은 모두 허구입니다. 실제와 닮은 부분이 있더라도 게임의 재미를 위해 꾸민 것입니다. 실제 전기 작업은 반드시 관련 법규와 안전 수칙을 따르세요.</p>
     <div class="btns"><button id="btnStart" class="primary">시작</button><button id="btnNameCancel">돌아가기</button></div>
   </div>
 </div>
